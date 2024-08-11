@@ -1,4 +1,4 @@
-//package SWEA_1974_스도쿠;
+package SWEA_1974_스도쿠;
 
 import java.util.Scanner;
 
