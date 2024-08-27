@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
-    <entry loc="C:\Program Files\BellSoft\LibericaJDK-17" stamp="1720672962800"/>
-    <entry loc="C:\Users\SSAFY\Desktop\설치파일\sts-4.22.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830\jre" stamp="1720750242378"/>
+    <entry loc="C:\Program Files\BellSoft\LibericaJDK-17" stamp="1720672950710"/>
+    <entry loc="C:\Users\SSAFY\Desktop\설치파일\sts-4.22.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830\jre" stamp="1723794375911"/>
+    <entry loc="C:\Program Files\Zulu\zulu-8" stamp="1717564934722"/>
     <entry loc="C:\Users\SSAFY\Desktop\설치파일\sts-4.22.1.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.11.v20240426-1830" stamp="1720750242378"/>
 </dirs>
