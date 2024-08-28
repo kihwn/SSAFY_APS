@@ -29,10 +29,13 @@ public class Solution {
 		int R = mid+1; //오른쪽은 mid+1~right까지
 		int idx = left; //tmp배열의 인덱스
 		
+		//L과 R이 각각 가리키는 요소를 비교하며 작은 값을 tmp 배열에 복사하기.
 		while(L<=mid && R<=right) {
+			//L이 더 작을 경우 L에 해당하는 값을 tmp에 저장
 			if (arr[L]<=arr[R]) {
 				tmp[idx++]=arr[L++];
 			}else {
+			//R이 더 작을 경우 R에 해당하는 값을 tmp에 저장
 				tmp[idx++]=arr[R++];
 			}
 		}
