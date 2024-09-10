@@ -1,0 +1,56 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class Main {
+	static String s;
+  //flag 최종 가능 여부
+	static boolean flag= false;
+	public static void main(String[]args) {
+		Scanner sc = new Scanner (System.in);
+		s = sc.next();
+    //t는 static이 아닌 지역 변수로 선언한 이유는 이후에 메서드에서 각 메서드의 실행에 따라 서로 다른 값으로 독립적으로 전해져야 하기 때문
+		String t = sc.next();
+		
+		combination(t);
+		
+		if (!flag) {
+			System.out.println("0");
+		}
+	}
+	
+	public static void combination(String t) {
+    //t의 길이가 s와 같아졌을 때 서로 일치하지 않으면 불가.
+		if (t.length()== s.length()) {
+			if (t.equals(s)) {
+				flag = true;
+				System.out.println("1");
+			}
+			return;
+		}
+
+    //각 실행 이후 재귀 시 파라미터 값이 달라지게 됨
+		if (!flag) {
+		//A로 끝나면 뒤에서 A를 하나 지우기
+		if (t.endsWith("A")) {
+			combination(t.substring(0,t.length()-1));
+		}
+		//B로 시작하면 맨앞에서 B를 하나 지워주고, 뒤집기
+		if (t.startsWith("B")) {
+			String tmp = t.substring(1);
+			StringBuilder reverse = new StringBuilder(tmp);
+			reverse.reverse();
+			combination(reverse.toString());
+		}
+		}
+	}
+
+}
+	
+	
